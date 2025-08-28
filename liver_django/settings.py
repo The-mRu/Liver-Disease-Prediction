@@ -23,9 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rr!*w6i4pw&h68^z0143a(w5+d=swuo_7kl%)0+978^lrqj%rk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['*']
+
+DEBUG = False
+ALLOWED_HOSTS = ["liver-disease-prediction-95i8.onrender.com", "127.0.0.1", "localhost"]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://liver-disease-prediction-95i8.onrender.com",
+]
 
 
 # Application definition
